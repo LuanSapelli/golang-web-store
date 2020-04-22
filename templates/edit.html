@@ -1,0 +1,63 @@
+{{define "edit"}}
+
+{{template "_head"}}
+
+<nav class="navbar navbar-light bg-light mb-4">
+    <a class="navbar-brand" href="/">Alura Loja</a>
+</nav>"
+
+<div class="container">
+
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-5">Edit Product</h1>
+            </div>
+        </div>
+        <form method="POST" action="update">
+            <input type="hidden" name="id" value="{{.ID}}">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="nome">New Name:</label>
+                        <input type="text" name="name" class="form-control" value="{{.Name}}">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="descricao">New Description:</label>
+                        <input type="text" name="description" class="form-control" value="{{.Description}}">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="preco">New Price:</label>
+                        <input type="number" name="price" class="form-control" step="0.01" value="{{.Price}}">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="quantidade">New Quantity:</label>
+                        <input type="number" name="quantity" class="form-control" value="{{.Quantity}}">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" value="salvar" class="btn btn-success">Edit</button>
+            <a class="btn btn-info" href="/">Back</a>
+        </form>
+    </body>
+
+</html>
+</div>
+</body>
+
+</html>
+
+{{end}}
