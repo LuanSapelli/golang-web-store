@@ -1,3 +1,2 @@
-web_store/* linguist-vendored
-web_store/* linguist-vendored
-web_store/* linguist-vendored
+web_store/templates* linguist-vendored
+web_store/templates* linguist-vendored
